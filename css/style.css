@@ -1,0 +1,54 @@
+:root {
+    /* declarando variáveis para uso posterior*/
+    --preto: rgb(2, 2, 2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* o limite de tudo será a borda da caixa*/
+}
+
+body {
+    background-color: var(--preto);
+    font-family: "Mukta", sans-serif;
+    color: whitesmoke;
+}
+
+header .container-navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .img-logo {
+    width: 155px;
+    height: 60px;
+    margin: 5px;
+    padding: 2px;
+}
+
+header .container-navbar a {
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 15px;
+    text-transform: uppercase;
+}
+
+header .container-navbar a:hover {
+    color: #fff;
+}
+
+.filme-principal {
+    font-size: 20px;
+}
+
+main #bg-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
