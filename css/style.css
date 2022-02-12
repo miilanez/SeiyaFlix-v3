@@ -55,6 +55,12 @@ main #bg-video {
     /* z-index: -1 coloca o video por trás dos elementos na tela */
 }
 
+.logo-filme-principal,
+.subtitulo,
+.descricao {
+    margin-left: 10px;
+}
+
 .filme-principal .botao-play,
 .botao-info {
     background-color: rgba(0, 0, 0, .80);
