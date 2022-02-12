@@ -46,9 +46,11 @@ header .container-navbar a:hover {
 }
 
 main #bg-video {
-    position: fixed;
-    right: 0;
+    display: flex;
+    position: absolute;
+    left: 0;
     bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
+    width: 65%;
+    z-index: -1;
+    /* z-index: -1 coloca o video por trás dos elementos na tela */
 }
