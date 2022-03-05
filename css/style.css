@@ -1,6 +1,7 @@
 :root {
     /* declarando variáveis para uso posterior*/
     --preto: rgb(2, 2, 2);
+    --branco: whitesmoke;
 }
 
 * {
@@ -11,9 +12,8 @@
 }
 
 body {
-    background-color: var(--preto);
     font-family: "Mukta", sans-serif;
-    color: whitesmoke;
+    color: var(--branco);
 }
 
 header .container-navbar {
@@ -21,44 +21,64 @@ header .container-navbar {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+
 }
 
-header .img-logo {
-    width: 155px;
-    height: 60px;
-    margin: 5px;
-    padding: 2px;
-}
-
-header .container-navbar a {
+.container-navbar a {
     text-decoration: none;
     color: #aaa;
     margin-right: 15px;
     text-transform: uppercase;
+    padding: 10px;
+}
+.img-logo {
+    width: 140px;
+    height: 60px;
+    margin-left: 15px;
+    padding: 2px;
+    margin-top: 10px;
 }
 
-header .container-navbar a:hover {
+.container-navbar a:hover {
     color: #fff;
 }
 
 .filme-principal {
-    font-size: 20px;
+    font-size: 1em;    
+    letter-spacing: 1px;
+    width: 850px;
+    margin-left: 50px ;
 }
 
-main #bg-video {
+.filme-principal h1, p {
+    margin-left: 20px;
+
+} 
+
+.filme-principal p {
+    margin-top: 10px;
+}
+
+#box-opacity {
+    background: rgba(0, 0, 0, .60);
+    margin-top: 10px;
+    border-radius: 10px;
+    height: 150px;
+}
+
+main {
+    margin-top: 120px;
+}
+
+#bg-video {
     display: flex;
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 65%;
+    width: 100%;
     z-index: -1;
     /* z-index: -1 coloca o video por trás dos elementos na tela */
-}
-
-.logo-filme-principal,
-.subtitulo,
-.descricao {
-    margin-left: 10px;
 }
 
 .filme-principal .botao-play,
@@ -66,16 +86,20 @@ main #bg-video {
     background-color: rgba(0, 0, 0, .80);
     border: none;
     color: whitesmoke;
+    margin-top: 20px;
     padding: 15px 30px;
     margin-right: 15px;
     font-size: 13px;
-    margin-left: 30px;
     cursor: pointer;
     transition: .3s ease all;
+    font-weight: 600;
+    border-radius: 10px;
 }
 
-.botao:hover {
+.botao-play:hover,
+.botao-info:hover {
     background-color: white;
+    font-weight: 600;
     color: black;
 }
 
